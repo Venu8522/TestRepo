@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="title"> Latest Books</h2>
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let book of books" class="card col-sm-3" style="margin: 15px;">
+            <div>
+                <div class="card-body">
+                    <h5 class="card-title">{{book.title}}</h5>
+                    <p class="card-text">{{book.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

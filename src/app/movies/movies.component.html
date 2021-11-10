@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="title"> Movie Reviews</h1>
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let movie of movies" class="card col-sm-3 movieCard">
+            <div>
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.display_title}}</h5>
+                    <p class="card-text">{{movie.summary_short | textdot :150}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
